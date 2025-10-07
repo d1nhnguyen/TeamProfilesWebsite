@@ -21,6 +21,7 @@ body {
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
 }
 
 /*HEADER */
@@ -164,10 +165,10 @@ h1 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     font-weight: bold;
-    padding: 12px 30px;
+    padding: 12px 20px;
     border-radius: 25px;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     transition: transform 0.3s ease;
     cursor: pointer;
     border: none;
@@ -181,14 +182,17 @@ h1 {
 
 /* MEMBER PROFILE PAGE */
 .member-profile {
-    display: flex;                 
-    align-items: center;          
-    justify-content: center;      
-    gap: 120px;                      
-    max-width: 1000px;
-    margin: 0 auto;                 
-    padding: 40px 20px;
-    flex-wrap: wrap;                
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* căn giữa ảnh và links */
+  gap: 20px;           /* khoảng cách giữa ảnh và links */
 }
 
 .info-title {
@@ -200,10 +204,32 @@ h1 {
 }
 
 .profile-image {
-    width: 250px;
-    height: auto;
-    border-radius: 15px;           
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-me {
+
+}
+
+.about-me h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #667eea;        
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 0.95rem;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(102, 126, 234, 0.05);
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+  font-size: 0.95em;
+  color: #444;
+  line-height: 1.6; 
 }
 
 .profile-details h2 {
@@ -211,14 +237,9 @@ h1 {
 }
 
 .detail-item {
-    margin-bottom: 12px;
-    font-size: 1rem;
-}
-
-.detail-item {
     background: white;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -229,24 +250,29 @@ h1 {
     width: 150px;
 }
 
+/* SOCIAL MEDIA SECTION */
+.social-links {
+  display: flex;
+  gap: 15px;          /* khoảng cách giữa các link */
+  justify-content: center;
+}
+
 .social-links a {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #667eea;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #764ba2;
+  color: #6c63ff;
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .member-profile {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 40px;
     }
 
     h1 {
@@ -263,6 +289,10 @@ h1 {
 
     .profile-details h2 {
         font-size: 2em;
+    }
+
+    .social-media {
+        margin-top: 20px;
     }
 }
 
