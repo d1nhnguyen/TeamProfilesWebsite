@@ -191,6 +191,13 @@ h1 {
     flex-wrap: wrap;                
 }
 
+.info-title {
+    font-size: 1.2em;
+    color: #667eea;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 5px;
+}
 
 .profile-image {
     width: 250px;
@@ -221,6 +228,20 @@ h1 {
     display: inline-block;
     width: 150px;
 }
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #764ba2;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
