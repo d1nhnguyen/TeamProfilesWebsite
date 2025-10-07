@@ -191,8 +191,8 @@ h1 {
 .profile-left {
   display: flex;
   flex-direction: column;
-  align-items: center; /* căn giữa ảnh và links */
-  gap: 20px;           /* khoảng cách giữa ảnh và links */
+  align-items: center;
+  gap: 20px;           
 }
 
 .info-title {
@@ -209,10 +209,6 @@ h1 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.about-me {
-
-}
-
 .about-me h3 {
   font-size: 1.2rem;
   font-weight: bold;
@@ -227,7 +223,6 @@ h1 {
   background: rgba(102, 126, 234, 0.05);
   border-left: 4px solid #667eea;
   border-radius: 8px;
-  font-size: 0.95em;
   color: #444;
   line-height: 1.6; 
 }
@@ -253,7 +248,7 @@ h1 {
 /* SOCIAL MEDIA SECTION */
 .social-links {
   display: flex;
-  gap: 15px;          /* khoảng cách giữa các link */
+  gap: 15px;         
   justify-content: center;
 }
 
