@@ -25,9 +25,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* ===========================
-   HEADER
-   =========================== */
+/* HEADER */
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -47,9 +45,7 @@ h1 {
     font-size: 1.2em;
 }
 
-/* ===========================
-   GROUP INFO SECTION
-   =========================== */
+/* GROUP INFO SECTION */
 .group-info {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 30px;
@@ -82,9 +78,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-/* ===========================
-   GROUP PHOTO SECTION
-   =========================== */
+/* GROUP PHOTO SECTION */
 .photo-section {
     text-align: center;
     margin-bottom: 40px;
@@ -172,9 +166,7 @@ h1 {
     border-radius: 10px;
 }
 
-/* ===========================
-   MEMBERS LIST
-   =========================== */
+/* MEMBERS LIST */
 .members-list {
     margin-top: 30px;
 }
@@ -207,9 +199,7 @@ h1 {
     color: #667eea;
 }
 
-/* ===========================
-   BACK BUTTON
-   =========================== */
+/* BACK BUTTON */
 .back-button {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -230,9 +220,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ===========================
-   MEMBER PROFILE PAGE
-   =========================== */
+/* MEMBER PROFILE PAGE */
 .member-profile {
     display: grid;
     grid-template-columns: 1fr 2fr;
