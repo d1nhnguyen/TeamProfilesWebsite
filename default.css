@@ -1,6 +1,4 @@
-/* ===========================
-   RESET & BASE STYLES
-   =========================== */
+/* Reset & base styles */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +23,7 @@ body {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* HEADER */
+/* Header */
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -45,7 +43,7 @@ h1 {
     font-size: 1.2em;
 }
 
-/* GROUP INFO SECTION */
+/* Group info section */
 .group-info {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 30px;
@@ -78,7 +76,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-/* GROUP PHOTO SECTION */
+/* Group photo section */
 .photo-section {
     text-align: center;
     margin-bottom: 40px;
@@ -166,7 +164,7 @@ h1 {
     border-radius: 10px;
 }
 
-/* MEMBERS LIST */
+/* Members list */
 .members-list {
     margin-top: 30px;
 }
@@ -199,7 +197,7 @@ h1 {
     color: #667eea;
 }
 
-/* BACK BUTTON */
+/* Back button*/
 .back-button {
     display: inline-block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -220,7 +218,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* MEMBER PROFILE PAGE */
+/* Member profiles */
 .member-profile {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -294,9 +292,7 @@ h1 {
     line-height: 1.6;
 }
 
-/* ===========================
-   SOCIAL MEDIA SECTION
-   =========================== */
+/* Social media section */
 .social-links {
     display: flex;
     gap: 15px;
@@ -315,9 +311,7 @@ h1 {
     color: #667eea;
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
+/* Responsive */
 @media (max-width: 768px) {
     .container {
         padding: 20px;

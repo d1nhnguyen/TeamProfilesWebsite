@@ -55,17 +55,35 @@
       <h2><i style="font-size:24px" class="fa">&#xf083;</i> Meet Our Team</h2>
 
       <div class="group-photo-container">
-        <img src="images/team-photo.jpg"
+        <img src="images/group-photo.png"
              usemap="#teammap"
              alt="Our Team"
-             class="group-photo">
+             class="group-photo"
+             id="team-photo">
       </div>
 
       <!-- Image Map -->
-      <map name="teammap">
-        <area shape="circle" coords="200,250,70" href="members/23120031/23120031.html" alt="Member 1">
-        <area shape="circle" coords="400,250,70" href="members/23120045/23120045.html" alt="Member 2">
-        <area shape="circle" coords="600,250,70" href="members/23120090/23120090.html" alt="Member 3">
+      <map name="teammap" id="teammap">
+        <area shape="rect" 
+              coords="0,0,267,450" 
+              href="members/23120031/23120031.html" 
+              alt="Member 1" 
+              title="Nguyen Phu Dinh"
+              data-member="1">
+
+        <area shape="rect" 
+              coords="267,0,534,450"
+              href="members/23120045/23120045.html" 
+              alt="Member 2" 
+              title="Duong Khanh Khai Hung"
+              data-member="2">
+
+        <area shape="rect" 
+              coords="534,0,800,450" 
+              href="members/23120090/23120090.html" 
+              alt="Member 3" 
+              title="Nguyen Gia Thinh"
+              data-member="3">
       </map>
 
       <p class="instruction">&#9757; Click on each member to see information</p>
@@ -92,6 +110,39 @@
     </div>
 
   </div>
+
+  <!-- Responsive image map -->
+  <script>
+    function updateImageMap() {
+      const img = document.getElementById('team-photo');
+      const areas = document.querySelectorAll('#teammap area');
+      
+      if (img.complete) {
+        resizeMap();
+      } else {
+        img.addEventListener('load', resizeMap);
+      }
+      
+      function resizeMap() {
+        const width = img.clientWidth;
+        const height = img.clientHeight;
+        const oneThird = width / 3;
+        
+        areas.forEach((area, index) => {
+          const left = oneThird * index;
+          const right = oneThird * (index + 1);
+          
+          area.coords = `${Math.round(left)},0,${Math.round(right)},${Math.round(height)}`;
+        });
+      }
+    }
+
+    updateImageMap();
+    
+    window.addEventListener('resize', updateImageMap);
+    
+    setTimeout(updateImageMap, 100);
+  </script>
   
 </body>
 </html>
